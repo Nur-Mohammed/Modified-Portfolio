@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.text {
+  color: dimgray;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+}
+
+.common {
+  margin-bottom: 150px;
+  min-height: 500px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.bottom-style::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 250px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* ======================= */
+/* my-self section styling */
+/* ======================= */
+section.my-self {
+  background: url(images/header-bg.png);
+  background-repeat: no-repeat;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+section.my-self .self-text {
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+  padding-top: 80px;
+}
+
+section.my-self .image {
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+  text-align: center;
+  padding-top: 50px;
+}
+
+section.my-self .image img {
+  width: 100%;
+}
+
+.highlight {
+  color: #eb487c;
+}
+
+/* responsive my-self section */
+/* ================================================== */
+@media (max-width: 800px) {
+  .common {
+    margin-bottom: 80px;
+  }
+
+  section.my-self {
+    background: #f6f8fd;
+
+  }
+
+  section.my-self .self-text {
+    width: 90%;
+    margin-left: 5%;
+    float: none;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  section.my-self .image {
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .bottom-style::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 250px;
+    background: linear-gradient(45deg, #eb457a, #edc031);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+} @media(max-width: 400px) {
+  h1,h2 {
+    font-size: 25px;
+  }
+  .bottom-style::after {
+    content: "";
+    width: 220px;
+    
+  
+  }
+}
+
+/* ======================= */
+/* Biography section styling */
+/* ======================= */
+section.biography {
+  background: url(images/biography-bg.png);
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+section.biography .biography-text {
+  width: 40%;
+  float: right;
+  margin-left: 5%;
+  padding: 2%;
+}
+
+section.biography .biography-image {
+  width: 40%;
+  right: right;
+  margin-left: 5%;
+}
+
+section.biography .biography-image img {
+  width: 100%;
+}
+
+.bottom-style-biography::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 160px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+  border-radius: 20px;
+  margin-top: 7px;
+}
+
+
+/* responsive biograpy section */
+/* ================================================== */
+@media (max-width: 800px) {
+  section.biography {
+    background: #fff;
+    /* background-repeat: no-repeat; */
+    min-height: 500px;
+  }
+
+  section.biography .biography-text {
+    width: 90%;
+    margin-left: 5%;
+    float: none;
+    text-align: center;
+    padding-top: 0px;
+  }
+  @media(max-width: 400px) {
+    h1,h2 {
+      font-size: 25px;
+    }
+    .bottom-style-biography::after {
+      content: "";
+      width: 220px;
+      
+    
+    }
+  }
+
+  section.biography .biography-image {
+    width: 60%;
+    margin: 0 auto;
+    float: none;
+    margin-top: 50px;
+  }
+
+  .bottom-style-biography::after {
+    margin: 0 auto;
+    margin-top: 7px;
+  }
+
+}
+
+/* ======================= */
+/* Latest Work section styling */
+/* ======================= */
+section.latest-work {
+  background: url(images/latest-work-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 350px;
+  text-align: center;
+
+}
+
+section.latest-work .wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.latest-work .wrapper .pic {
+  width: 30%;
+  float: left;
+
+}
+
+section.latest-work .wrapper .pic img {
+  width: 100%;
+}
+
+.bottom-style-latest {
+  padding-bottom: 70px;
+}
+
+.bottom-style-latest::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 250px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+/* responsive My Latest Work section */
+/* ================================================== */
+@media(max-width:800px) {
+  section.latest-work .wrapper .pic {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px dimgray;
+  }
+
+  .bottom-style-latest {
+    padding-bottom: 40px;
+  }
+
+}
+@media(max-width: 400px) {
+  h1,h2 {
+    font-size: 25px;
+  }
+  .bottom-style-latest::after {
+    content: "";
+    width: 220px;
+    
+  
+  }
+}
+
+
+/* ======================= */
+/* Provided Services section styling */
+/* ======================= */
+section.services {
+  background: #F8F9FC;
+  background-size: cover;
+  text-align: center;
+  min-height: 700px;
+
+  padding-bottom: 40px;
+}
+
+section.services h1 {
+  margin-bottom: 80px;
+  padding-top: 30px;
+}
+
+.bottom-style-services::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 280px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 7px;
+
+
+}
+
+section.services .row {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+section.services .row .box {
+  width: 45%;
+  float: left;
+  margin: 0 2.5%;
+  padding: 2%;
+  border: 2px solid #F05224;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #EA4887;
+}
+
+section.services .row .mt {
+  margin-top: 5%;
+}
+
+/* responsive Provided Services section */
+/* ================================================== */
+@media(max-width: 800px) {
+  section.services .row .box {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    padding: 5%;
+    border: 2px solid #F05224;
+    border-radius: 10px;
+    margin-top: 20px
+  }
+
+  section.services .row .box:first-child {
+    margin-top: 0;
+  }
+
+}
+@media(max-width: 400px) {
+  h1,h2 {
+    font-size: 25px;
+  }
+  .bottom-style-services::after {
+    content: "";
+    width: 220px;
+    
+  
+  }
+}
+
+/* ======================= */
+/* Client section styling */
+/* ======================= */
+section.client {
+  text-align: center;
+
+}
+
+section.client h1 {
+  margin-bottom: 60px;
+}
+
+section.client blockquote {
+  width: 50%;
+  margin: 40px auto;
+
+}
+
+.bottom-style-client::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 300px;
+  background: linear-gradient(45deg, #eb457a, #edc031);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 7px;
+
+}
+
+section.client .contact {
+  width: 70%;
+  background: #EC2D74;
+  padding: 2.5% 2%;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+section.client .contact h2 {
+  font-size: 30px;
+}
+
+
+/* common responsive style */
+/* =================================== */
+@media(max-width: 700px){
+  section.client .contact h2 {
+    font-size: 20px;
+  }
+}
+@media(max-width: 500px) {
+  h1,h2 {
+    font-size: 25px;
+  }
+  .bottom-style-client::after {
+    content: "";
+    width: 220px;
+    
+  
+  }
+  section.client img{
+    width: 60%;
+  }
+  section.client .contact{
+    width: 100%;
+  }
+ 
+}
