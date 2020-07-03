@@ -116,15 +116,20 @@ section.my-self .image img {
     margin: 0 auto;
     margin-top: 5px;
   }
-} @media(max-width: 400px) {
-  h1,h2 {
+}
+
+@media(max-width: 400px) {
+
+  h1,
+  h2 {
     font-size: 25px;
   }
+
   .bottom-style::after {
     content: "";
     width: 220px;
-    
-  
+
+
   }
 }
 
@@ -181,15 +186,19 @@ section.biography .biography-image img {
     text-align: center;
     padding-top: 0px;
   }
+
   @media(max-width: 400px) {
-    h1,h2 {
+
+    h1,
+    h2 {
       font-size: 25px;
     }
+
     .bottom-style-biography::after {
       content: "";
       width: 220px;
-      
-    
+
+
     }
   }
 
@@ -265,15 +274,19 @@ section.latest-work .wrapper .pic img {
   }
 
 }
+
 @media(max-width: 400px) {
-  h1,h2 {
+
+  h1,
+  h2 {
     font-size: 25px;
   }
+
   .bottom-style-latest::after {
     content: "";
     width: 220px;
-    
-  
+
+
   }
 }
 
@@ -346,15 +359,19 @@ section.services .row .mt {
   }
 
 }
+
 @media(max-width: 400px) {
-  h1,h2 {
+
+  h1,
+  h2 {
     font-size: 25px;
   }
+
   .bottom-style-services::after {
     content: "";
     width: 220px;
-    
-  
+
+
   }
 }
 
@@ -404,26 +421,38 @@ section.client .contact h2 {
 
 /* common responsive style */
 /* =================================== */
-@media(max-width: 700px){
+@media(max-width: 700px) {
   section.client .contact h2 {
     font-size: 20px;
   }
 }
+
 @media(max-width: 500px) {
-  h1,h2 {
+
+  h1,
+  h2 {
     font-size: 25px;
   }
+
   .bottom-style-client::after {
     content: "";
     width: 220px;
-    
-  
+
+
   }
-  section.client img{
+
+  section.client blockquote {
+    width: 90%;
+    margin: 40px auto;
+
+  }
+
+  section.client img {
     width: 60%;
   }
-  section.client .contact{
+
+  section.client .contact {
     width: 100%;
   }
- 
+
 }
